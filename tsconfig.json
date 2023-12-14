@@ -3,7 +3,7 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -23,6 +23,6 @@
     },
     "typeRoots": ["node_modules/@types", "src/index.d.ts", "src/types"]
   },
-  "include": ["src"],
+  "include": ["src", "plop"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

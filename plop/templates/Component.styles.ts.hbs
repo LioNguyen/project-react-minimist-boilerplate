@@ -1,0 +1,9 @@
+import styled from "@emotion/styled";
+{{#if isChakra}}
+import { {{element}} } from "@chakra-ui/react";
+
+export const Styled{{pascalCase name}} = styled({{element}})<{}>({}, (props) => ({}));
+{{else}}
+
+export const Styled{{pascalCase name}} = styled('{{element}}')<{}>({}, (props) => ({}));
+{{/if}}

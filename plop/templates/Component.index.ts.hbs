@@ -1,0 +1,6 @@
+import { Utils } from "react-minimist-utils"; 
+
+export const {{pascalCase name}} = Utils.lazyLoad(
+  () => import('./{{pascalCase name}}'), 
+  module => module.{{pascalCase name}}
+);
