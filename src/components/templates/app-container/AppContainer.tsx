@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Container, ContainerProps } from "@chakra-ui/react";
 
-interface AppContainerProps extends ContainerProps {}
+export interface AppContainerProps extends ContainerProps {}
 
 export const AppContainer: FC<AppContainerProps> = ({
   className = "",

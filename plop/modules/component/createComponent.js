@@ -32,18 +32,18 @@ export const createComponent = (plop) => {
     actions: [
       {
         type: "add",
-        path: "src/components/{{elementFolder}}/{{pascalCase name}}/{{pascalCase name}}.tsx",
-        templateFile: "plop/templates/Component.tsx.hbs",
+        path: "../src/components/{{elementFolder}}/{{pascalCase name}}/{{pascalCase name}}.tsx",
+        templateFile: "templates/Component.tsx.hbs",
       },
       {
         type: "add",
-        path: "src/components/{{elementFolder}}/{{pascalCase name}}/{{pascalCase name}}.styles.ts",
-        templateFile: "plop/templates/Component.styles.ts.hbs",
+        path: "../src/components/{{elementFolder}}/{{pascalCase name}}/{{pascalCase name}}.styles.ts",
+        templateFile: "templates/Component.styles.ts.hbs",
       },
       {
         type: "add",
-        path: "src/components/{{elementFolder}}/{{pascalCase name}}/index.ts",
-        templateFile: "plop/templates/Component.index.ts.hbs",
+        path: "../src/components/{{elementFolder}}/{{pascalCase name}}/index.ts",
+        templateFile: "templates/Component.index.ts.hbs",
       },
       (data) => {
         const { elementFolder, name } = data;
@@ -59,7 +59,7 @@ export const createComponent = (plop) => {
         lines[lines.length - 1] += `export * from "./${toPascalCase(name)}"`;
 
         const updatedContent = [];
-        for (let item of lines) {
+        for (const item of lines) {
           if (!!item && !item.includes("{}")) {
             updatedContent.push(`${item};`);
           }

@@ -21,8 +21,8 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "typeRoots": ["node_modules/@types", "src/index.d.ts", "src/types"]
+    "typeRoots": ["node_modules/@types", "src/index.d.ts", "src/common/types"]
   },
-  "include": ["src", "plop"],
+  "include": ["src", "plop", "tests", ".eslintrc.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

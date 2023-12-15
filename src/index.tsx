@@ -1,4 +1,4 @@
-import { DefaultTheme, Fonts } from "@/styles";
+import { DefaultTheme } from "@/common/styles";
 
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import React from "react";
