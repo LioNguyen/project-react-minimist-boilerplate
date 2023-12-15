@@ -1,5 +1,5 @@
-import { createComponent } from "./component/createComponent.js";
-import { deleteComponent } from "./component/deleteComponent.js";
+import { createComponent } from "./components/createComponent.js";
+import { deleteComponent } from "./components/deleteComponent.js";
 
 export function plopGenerator(plop) {
   // Generator to create React components

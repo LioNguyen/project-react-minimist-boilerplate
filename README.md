@@ -102,3 +102,8 @@ my-app/
 └── ...
 
 ```
+
+## Tips
+```js
+import.meta.env.VITE_BASE_URL
+```

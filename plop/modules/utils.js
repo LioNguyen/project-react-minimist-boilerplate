@@ -20,3 +20,11 @@ export function deleteFolderRecursive(folderPath) {
     fs.rmdirSync(folderPath);
   }
 }
+
+export function getComponentPath(elementFolder, elementLevel, featureName) {
+  if (elementFolder === "common") {
+    return `src/common/components/${elementLevel}`;
+  }
+
+  return `src/components/${featureName.toLowerCase()}`;
+}
